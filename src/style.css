@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --container-width: 1110px;
+    --projects-width: 1920px;
+
+    --blue:  rgba(52, 84, 122, 1);
+    --gray1: rgba(238, 239, 241, 1);
+    --gray2: #E5E5E5;
+    --gray3: rgba(114, 114, 114, 1);
+    --gray4: rgba(196, 196, 196, 1);
+    --gray5: #f9f9f9;
+    --white: rgb(255, 255, 255);
+    --black: rgba(0, 0, 0, 1);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 57px;
+    background-color: var(--gray1);
+
+}
+
+.wrapper {
+    padding-right: calc(50% - (var(--container-width) / 2));
+    padding-left: calc(50% - (var(--container-width) / 2));
+}
+
+.wrapperProjects {
+    padding-right: calc(50% - (var(--projects-width) / 2));
+    padding-left: calc(50% - (var(--projects-width) / 2));
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+button {
+    border: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    color: var(--gray3);
+}
+
+input, textarea {
+    padding: 17px 20px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+}
+
+textArea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: var(--blue) solid 2px;  
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navList {
+    display: flex;
+
+}
+
+.header__navItem {
+    color: var(--black);
+}
+
+.header__navItem + .header__navItem {
+    margin-left: 42px;
+}
+
+.header__navItemLink_color {
+    color: var(--blue);
+}
+
+/* main */
+.aboutUs {
+    margin-left: 96px;
+    padding-top: 146px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--gray1);
+}
+
+.aboutUs__imgWrapper {
+    margin-top: 22px;
+}
+
+.aboutUs__title {
+    margin-bottom: 60px;
+}
+
+.aboutUs__description {
+    max-width: 540px;
+    margin-bottom: 60px;
+}
+
+.submitBtn {
+    font-size: 15px;
+    padding: 25px 41px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+/* about me */
+.personInfo {
+    padding-top: 119px;
+    background-color: var(--gray5);
+}
+
+.personInfo__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.personInfo__text {
+    display: flex;
+    justify-content: center;
+}
+
+.personInfo__description {
+    max-width: 540px;
+    margin-bottom: 100px;
+}
+
+
+
+/* person works */
+.personWorks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.workItem {
+    display: flex;
+}
+
+.workItem + .workItem {
+    margin-left: 49px;
+}
+
+.workItem__info {
+    margin-left: 20px;
+}
+
+.workItem__worksItemCount {
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.workItem__worksItemName {
+    color: var(--white);
+}
+
+
+
+/* person skills */
+.personSkills {
+    padding-top: 102px;
+    padding-bottom: 101px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray5);
+}
+
+.personSkills__info {
+    margin-top: 102px;
+}
+
+.personSkills__infoTitle {
+    padding-bottom: 50px;
+}
+
+.skill + .skill {
+    margin-top: 30px;
+}
+
+.skill__name {
+    padding-bottom: 20px;
+}
+
+.skill__possession {
+    position: relative;
+    width: 350px;
+    height: 4px;
+    background-color: var(--gray4);
+}
+
+.skill__possession::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: var(--blue);
+}
+
+.personSkills__imgWrapper {
+    max-width: 555px;
+    max-height: 450px;
+}
+
+.personSkills__img {
+    width: 555px;
+    height: 450px;
+}
+
+
+
+.personInfo_video {
+    padding-bottom: 100px;
+    background-color: var(--gray1);
+}
+
+.personInfo__video {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* projects */
+.projects {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: var(--gray5);
+}
+
+.projects__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__link {
+    position: relative;
+    max-width: 480px;
+    max-height: 480px;
+}
+
+.project__linkIcon {
+    display: none;
+    content: '';
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.projects__link:hover {
+    filter: opacity(0.7) drop-shadow(0px 0px 0px blue);
+}
+
+.projects__link:hover .project__linkIcon {
+    display: block;
+}
+
+.projects__img {
+    width: 480px;
+    height: 480px;
+}
+
+
+
+/* buy a webSite */
+.buySite {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray1);
+}
+
+.buySite__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.buySite__description {
+    max-width: 540px;
+    margin-bottom: 100px;
+}
+
+.buySite__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buySite__formWrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buySite__formInput {
+    width: 255px;
+    height: 50px;
+    font-size: 14px;
+}
+.buySite__formInput + .buySite__formInput {
+    margin-left: 30px;
+}
+
+.buySite__formMessage {
+    margin-bottom: 50px;
+    width: 540px;
+    height: 175px;
+    font-size: 14px;
+}
+
+.submitBtn_height {
+    padding: 20px 41px;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.footer__aboutCreator {
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.footer__aboutSite {
+    font-size: 13px;
+    color: var(--white);
+}
+
+.footer__socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.footer__vk + .footer__vk {
+    margin-left: 22px;
+}
