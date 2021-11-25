@@ -62,6 +62,7 @@ a {
 }
 
 ul {
+    padding: 0;
     list-style-type: none;
 }
 
@@ -130,7 +131,18 @@ header {
 }
 
 .aboutUs__imgWrapper {
+    max-width: 357px;
+    text-align: center;
     margin-top: 22px;
+}
+
+.aboutUs__img {
+    width: 100%;
+    height: auto;
+
+}
+.aboutUs__content {
+    margin-left: 30px;
 }
 
 .aboutUs__title {
@@ -151,7 +163,7 @@ header {
 
 
 
-/* about me */
+/* about person */
 .personInfo {
     padding-top: 119px;
     background-color: var(--gray5);
@@ -176,20 +188,25 @@ header {
 
 /* person works */
 .personWorks {
-    display: flex;
-    justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 100px;
-    align-items: center;
     background-color: var(--blue);
+}
+
+.personWorks__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .workItem {
     display: flex;
+    margin-right: 10px;
 }
 
-.workItem + .workItem {
-    margin-left: 49px;
+.workItem:nth-child(1) {
+    margin-left: 0;
 }
 
 .workItem__info {
@@ -236,7 +253,7 @@ header {
 
 .skill__possession {
     position: relative;
-    width: 350px;
+    max-width: 350px;
     height: 4px;
     background-color: var(--gray4);
 }
@@ -255,20 +272,38 @@ header {
 }
 
 .personSkills__img {
-    width: 555px;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 
 
 
+/* Person info */
 .personInfo_video {
     padding-bottom: 100px;
     background-color: var(--gray1);
 }
 
-.personInfo__video {
+.personInfo__video {  
+    position: relative; 
     display: flex;
     justify-content: center;
+    max-width: 1110px;
+}
+
+.personInfo__videoImg {
+    width: 100%;
+    height: auto;
+}
+
+.personInfo__videoBtn {
+    content: '';
+    position: absolute;
+    left: calc(50% - 38px);
+    top: calc(50% - 38px);
+    width: 76px;
+    height: 76px;
+    background-color: transparent;
 }
 
 
@@ -283,6 +318,7 @@ header {
 .projects__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects__link {
@@ -353,13 +389,15 @@ header {
     height: 50px;
     font-size: 14px;
 }
+
 .buySite__formInput + .buySite__formInput {
     margin-left: 30px;
 }
 
 .buySite__formMessage {
     margin-bottom: 50px;
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
     height: 175px;
     font-size: 14px;
 }
@@ -368,6 +406,9 @@ header {
     padding: 20px 41px;
 }
 
+
+
+/* footer */
 .footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -396,4 +437,110 @@ header {
 
 .footer__vk + .footer__vk {
     margin-left: 22px;
+}
+
+
+
+@media screen and (max-width: 1180px) {
+    
+    .header, main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .personWorks__wrapper {
+        justify-content: start;
+    }
+    
+    .personWorks {
+        padding-bottom: 0;
+    }
+
+    .workItem {
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 90px;
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+
+
+    .aboutUs {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutUs {
+        text-align: center;
+    }
+    .aboutUs__imgWrapper {
+        margin-bottom: 50px;
+        flex-basis: 100%;
+    }
+    
+
+    .submitBtn {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .workItem {
+        flex-basis: 50%;
+    }
+
+    .personSkills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .personSkills__imgWrapper {
+        flex-basis: 100%;
+        order: 0;
+    }
+
+    .personSkills__info {
+        flex-basis: 50%;
+        order: 1;
+    }
+
+
+    .projects__content {
+        justify-content: center;
+    }
+
+    .projects__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .buySite__formWrapper {
+        flex-wrap: wrap;
+    }
+
+    .buySite__formInput {
+        margin-left: 0px;
+        flex-basis: 100%;
+    }
+
+    .buySite__formInput + .buySite__formInput {
+        margin-left: 0;
+        margin-top: 22px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__aboutCreator {
+        text-align: center;
+    }
 }

@@ -22,7 +22,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class='main'>
         <section class='aboutUs wrapper'>
             <div class='aboutUs__imgWrapper'>
                 <img class='aboutUs__img' src="/src/images/laptop.png">
@@ -45,58 +46,60 @@
 
         <section class='personWorks wrapper'>
             <h2 class='visually-hidden'>Статистика моих трудов</h2>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+            <div class='personWorks__wrapper'>
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
-            </div>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
-            </div>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
-                </div>
-            </div>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
-                </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
-                </div>
-            </div>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
-                </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
-                </div>
-            </div>
-            <div class='workItem'>
-                <div class='workItem__IconWrapper'>
-                    <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
-                </div>
-                <div class='workItem__info'>
-                    <p class='workItem__worksItemCount'>40+</p>
-                    <p class='workItem__worksItemName'>проектов</p>
+                <div class='workItem'>
+                    <div class='workItem__IconWrapper'>
+                        <img class='workItem__Icon' src="/src/icons/project.svg" alt="work icon">
+                    </div>
+                    <div class='workItem__info'>
+                        <p class='workItem__worksItemCount'>40+</p>
+                        <p class='workItem__worksItemName'>проектов</p>
+                    </div>
                 </div>
             </div>
         </section>  
@@ -129,7 +132,10 @@
                 </p>
             </div>
             <div class='personInfo__video'>
-                <iframe width="1110" height="600" src="https://www.youtube.com/embed/7uqZo46G3Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class='personInfo__videoImg'src="/src/images/code.png" alt="video">
+                <button class='personInfo__videoBtn'>
+                    <img src="/src/icons/play-button.svg" alt="play video">
+                </button>
             </div>
         </section>
 
@@ -187,6 +193,7 @@
             </form>
         </section>
     </main>
+    
     <footer class='footer wrapper'>
         <div class='footer__about'>
             <p class='footer__aboutCreator'>Иванов Иван</p>
