@@ -323,7 +323,8 @@ header {
 
 .projects__link {
     position: relative;
-    max-width: 480px;
+    flex-basis: 25%;
+    height: 25vw;
     max-height: 480px;
 }
 
@@ -347,8 +348,8 @@ header {
 }
 
 .projects__img {
-    width: 480px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -447,6 +448,8 @@ header {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -463,6 +466,11 @@ header {
         margin-right: 0;
         margin-bottom: 90px;
         flex-basis: 33%;
+    }
+
+    .projects__link {
+        flex-basis: 50%;
+        height: 50vw;
     }
 }
 
@@ -517,10 +525,7 @@ header {
         justify-content: center;
     }
 
-    .projects__img {
-        width: 100%;
-        height: auto;
-    }
+    
 
     .buySite__formWrapper {
         flex-wrap: wrap;

@@ -1,3 +1,6 @@
-let projects = document.querySelector(".header__navItem")
+let logo = document.querySelector('#logotype')
 
-console.log(projects)
+// setInterval(() => {
+//     logo.hidden = !logo.hidden
+// }
+// , 1000)
